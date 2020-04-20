@@ -1,7 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <TargetFrameworks>netstandard2.0;netcoreapp2.1</TargetFrameworks>
+        <Title>Munich Public Transport API Client</Title>
+        <Authors>Ruben de la Torre</Authors>
+        <Description>Basic C# API client to access information about munich public transportation.</Description>
+        <PackageProjectUrl>https://github.com/rubit0/MunichPublicTransport</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/rubit0/MunichPublicTransport/blob/master/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/rubit0/MunichPublicTransport</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>munich public transport</PackageTags>
+        <AssemblyVersion>1</AssemblyVersion>
+        <FileVersion>1</FileVersion>
     </PropertyGroup>
 
     <ItemGroup>

@@ -6,7 +6,7 @@ namespace MunichPublicTransport.Misc
 {
     internal class MillisecondsUnixTimeConverter : DateTimeConverterBase
     {
-        public override void WriteJson(JsonWriter writer, object? value, JsonSerializer serializer)
+        public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
             if (value == null)
             {
@@ -17,7 +17,7 @@ namespace MunichPublicTransport.Misc
             writer.WriteRawValue(milliSeconds.ToUnixTimeMilliseconds().ToString());
         }
 
-        public override object? ReadJson(JsonReader reader, Type objectType, object? existingValue, JsonSerializer serializer)
+        public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
         {
             if (reader.Value == null)
             {
